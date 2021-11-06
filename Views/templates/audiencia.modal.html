@@ -1,0 +1,276 @@
+<!-- Modal Incluir -->
+<div class="modal fade" id="inserir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inclusão de Audiencia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="post" action="">
+        <input type="hidden" name="acao" value="inserir"/>
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_audiencia" id="modal-id-audiencia-inclui">
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" class="form-control" name="data" id="modal-data-inclui" required>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="horario">Horário</label>
+                <input type="time" class="form-control" name="horario" id="modal-horario-inclui" required>
+              </div>
+            </div>
+          </div>
+
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_modalidade">Modalidade</label>
+                <select class="form-control" name="id_modalidade" id="modal-modalidade-inclui" required>
+                  <option value="">Selecione a Modalidade</option>
+                </select>
+              </div>  
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_tipo">Tipo</label>
+                <select class="form-control" name="id_tipo" id="modal-tipo-inclui" required>
+                  <option value="">Selecione o Tipo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="vara">Vara</label>
+                <input type="text" class="form-control" readonly="readonly" name="vara" id="modal-vara-inclui" required>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="processo">Processo</label>
+                <input type="text" class="form-control" readonly="readonly" name="processo" id="modal-processo-inclui" required>
+                <input type="hidden" class="form-control" readonly="readonly" name="id_processo" id="modal-id_processo-inclui" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cliente">Cliente</label>
+            <input type="text" class="form-control" readonly="readonly" name="cliente" id="modal-cliente-inclui" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reclamante">Parte adversa</label>
+            <input type="text" class="form-control" readonly="readonly" name="reclamante" id="modal-reclamante-inclui" required>
+          </div>
+
+          <div class="form-group">
+            <label for="preposto">Preposto</label>
+            <input type="text" class="form-control" readonly="readonly" name="preposto" id="modal-preposto-inclui" required>
+          </div>
+
+        </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Incluir</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Alterar -->
+<div class="modal fade" id="alterar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Alteração de Audiencia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formAlteraAudiencia" method="post" action="">
+        <input type="hidden" name="acao" value="alterar"/>
+
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_audiencia" id="modal-id_audiencia-altera">
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" class="form-control" name="data" id="modal-data-altera">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="horario">Horário</label>
+                <input type="time" class="form-control" name="horario" id="modal-horario-altera">
+              </div>
+            </div>
+          </div>
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_modalidade">Modalidade</label>
+                <select class="form-control" name="id_modalidade" id="modal-modalidade-altera" required>
+                  <option value="">Selecione a Modalidade</option>
+                </select>
+              </div>  
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_tipo">Tipo</label>
+                <select class="form-control" name="id_tipo" id="modal-tipo-altera" required>
+                  <option value="">Selecione o Tipo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="vara">Vara</label>
+                <input type="text" class="form-control" readonly="readonly" name="vara" id="modal-vara-altera">
+              </div>    
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="processo">Processo</label>
+                <input type="text" class="form-control" readonly="readonly" name="processo" id="modal-processo-altera">
+                <input type="hidden" class="form-control" readonly="readonly" name="id_processo" id="modal-id_processo-altera" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cliente">Cliente</label>
+            <input type="text" class="form-control" readonly="readonly" name="cliente" id="modal-cliente-altera">
+          </div>
+
+          <div class="form-group">
+            <label for="reclamante">Parte adversa</label>
+            <input type="text" class="form-control" readonly="readonly" name="reclamante" id="modal-reclamante-altera">
+          </div>
+
+          <div class="form-group">
+            <label for="preposto">Preposto</label>
+            <input type="text" class="form-control" readonly="readonly" name="preposto" id="modal-preposto-altera">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Excluir -->
+<div class="modal fade" id="excluir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exclusão de Audiência</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formExcluiVara" method="post" action="">
+        <input type="hidden" name="acao" value="excluir"/>
+        <div class="modal-body">          
+          <input class="form-control" type="hidden" readonly="readonly" name="id_audiencia" id="modal-id_audiencia-exclui">
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" class="form-control" readonly="readonly" name="data" id="modal-data-exclui">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="horario">Horário</label>
+                <input type="time" class="form-control" readonly="readonly" name="horario" id="modal-horario-exclui">
+              </div>
+            </div>
+          </div>
+
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_modalidade">Modalidade</label>
+                <select class="form-control" readonly="readonly" name="id_modalidade" id="modal-modalidade-exclui" required>
+                  <option value="">Selecione a Modalidade</option>
+                </select>
+              </div>  
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="id_tipo">Tipo</label>
+                <select class="form-control" readonly="readonly" name="id_tipo" id="modal-tipo-exclui" required>
+                  <option value="">Selecione o Tipo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class= "row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="vara">Vara</label>
+                <input type="text" class="form-control" readonly="readonly" name="vara" id="modal-vara-exclui">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="processo">Processo</label>
+                <input type="text" class="form-control" readonly="readonly" name="processo" id="modal-processo-exclui">
+              </div>              
+            </div>
+          </div>
+  
+            <div class="form-group">
+              <label for="cliente">Cliente</label>
+              <input type="text" class="form-control" readonly="readonly" name="cliente" id="modal-cliente-exclui">
+            </div>
+  
+            <div class="form-group">
+              <label for="reclamante">Parte adversa</label>
+              <input type="text" class="form-control" readonly="readonly" name="reclamante" id="modal-reclamante-exclui">
+            </div>
+  
+            <div class="form-group">
+              <label for="preposto">Preposto</label>
+              <input type="text" class="form-control" readonly="readonly" name="preposto" id="modal-preposto-exclui">
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

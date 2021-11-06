@@ -1,0 +1,105 @@
+<!-- Modal Incluir -->
+<div class="modal fade" id="inserir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inclusão de Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="post" action="">
+        <input type="hidden" name="acao" value="inserir"/>
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" class="form-control" name="cnpj" id="modal-cnpj-inclui" readonly>
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Razão Social</label>
+            <input type="text" class="form-control" name="nome" id="modal-nome-inclui" required>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Incluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Alterar -->
+<div class="modal fade" id="alterar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Alteração de Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="post" action="">
+        <input type="hidden" name="acao" value="alterar"/>
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_cliente" id="modal-id_cliente-altera">
+          <div class="form-group">
+            <label for="nome">Cliente</label>
+            <input type="text" class="form-control" name="nome" id="modal-nome-altera" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" readonly="readonly" class="form-control" name="cnpj" id="modal-cnpj-altera">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Excluir -->
+<div class="modal fade" id="excluir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exclusão de Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formExcluiVara" method="post" action="">
+        <input type="hidden" name="acao" value="excluir"/>
+        <div class="modal-body">
+          <input type="hidden" class="form-control" readonly="readonly" name="id_cliente" id="modal-id_cliente-exclui">
+          <div class="form-group">
+            <label for="nome">Cliente</label>
+            <input type="text" class="form-control" readonly="readonly" name="nome" id="modal-nome-exclui">
+          </div>
+
+          <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" class="form-control" readonly="readonly" name="cnpj" id="modal-cnpj-exclui">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

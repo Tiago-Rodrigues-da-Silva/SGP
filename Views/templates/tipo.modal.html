@@ -1,0 +1,84 @@
+<!-- Modal Incluir -->
+<div class="modal fade" id="inserir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inclusão de Tipo de Audiência</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="post" action="">
+        <input type="hidden" name="acao" value="inserir"/>
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_tipo" id="modal-id-tipo-inclui">
+        <div class="form-group">
+          <label for="nome">Tipo de Audiência</label>
+          <input type="text" class="form-control" name="tipo_audiencia" id="modal-tipo-inclui" required></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Incluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Alterar -->
+<div class="modal fade" id="alterar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Alteração de Tipo de Audiência</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formAlteraVara" method="post" action="">
+        <input type="hidden" name="acao" value="alterar"/>
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_tipo" id="modal-id-tipo-altera">
+          <div class="form-group">
+            <label for="nome">Tipo de Audiência</label>
+            <input type="text" class="form-control" name="tipo_audiencia" id="modal-tipo-altera" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Excluir -->
+<div class="modal fade" id="excluir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exclusão de Tipo de Audiência</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formExcluiVara" method="post" action="">
+        <input type="hidden" name="acao" value="excluir"/>
+        <div class="modal-body">
+          <input type="hidden" class="form-control" readonly="readonly" name="id_tipo" id="modal-id-tipo-exclui">
+        <div class="form-group">
+          <label for="nome">Tipo de Audiência</label>
+          <input type="text" class="form-control" readonly="readonly" name="tipo_audiencia" id="modal-tipo-exclui"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

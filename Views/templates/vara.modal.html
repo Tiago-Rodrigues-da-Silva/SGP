@@ -1,0 +1,122 @@
+<!-- Modal Incluir -->
+<div class="modal fade" id="inserir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inclusão de Vara</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="post" action="">
+        <input type="hidden" name="acao" value="inserir"/>
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_vara" id="modal-id-vara-inclui">
+          <div class="form-group">
+            <label for="nome">Nome completo da vara</label>
+            <input type="text" class="form-control" name="nome_vara" id="modal-vara-inclui" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nome_abrev">Nome abreviado da vara</label>
+            <input type="text" class="form-control" name="nome_vara_abrev" id="modal-vara-abrev-inclui" required>
+          </div>
+
+          <div class="form-group">
+            <label for="trt">TRT</label>
+            <input type="text" class="form-control" name="trt" id="modal-trt-inclui" required>
+          </div>  
+        </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Incluir</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal Alterar -->
+<div class="modal fade" id="alterar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Alteração de Vara</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formAlteraVara" method="post" action="">
+        <input type="hidden" name="acao" value="alterar"/>
+
+        <div class="modal-body">
+          <input class="form-control" type="hidden" readonly="readonly" name="id_vara" id="modal-id-vara-altera">
+          
+          <div class="form-group">
+            <label for="nome">Nome completo da vara</label>
+            <input type="text" class="form-control" name="nome_vara" id="modal-vara-altera" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nome_abrev">Nome abreviado da vara</label>
+            <input type="text" class="form-control" name="nome_vara_abrev" id="modal-vara-abrev-altera" required>
+          </div>
+
+          <div class="form-group">
+            <label for="trt">TRT</label>
+            <input type="text" class="form-control" name="trt" id="modal-trt-altera" required>
+          </div>  
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Excluir -->
+<div class="modal fade" id="excluir" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exclusão de Vara</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form id="formExcluiVara" method="post" action="">
+        <input type="hidden" name="acao" value="excluir"/>
+        <div class="modal-body">
+          <input type="hidden" class="form-control" readonly="readonly" name="id_vara" id="modal-id-vara-exclui">
+          <div class="form-group">
+            <label for="nome">Vara</label>
+            <input type="text" class="form-control" readonly="readonly" name="vara" id="modal-vara-exclui">
+          </div>
+
+          <div class="form-group">
+            <label for="nome_abrev">Nome abreviado da vara</label>
+            <input type="text" class="form-control" readonly="readonly" name="nome_vara_abrev" id="modal-vara-abrev-exclui">
+          </div>
+
+          <div class="form-group">
+            <label for="trt">TRT</label>
+            <input type="text" class="form-control" readonly="readonly" name="trt" id="modal-trt-exclui">
+          </div>  
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

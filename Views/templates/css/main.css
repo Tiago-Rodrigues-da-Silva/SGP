@@ -1,0 +1,38 @@
+.area-principal {
+    margin: 0rem 2rem 1rem 2rem;
+    background-color: #E7E6E6;
+    width: 85rem;
+    height: 35rem;
+  }
+
+.conteudo-administrativo {
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #DEEBF7;
+  width: 68rem;
+  height: 33rem;
+  overflow-y: scroll;
+}
+
+.conteudo-processo{
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #DEEBF7;
+  width: 82rem;
+  height: 33rem;
+  overflow-y: scroll;
+}
+
+.conteudo-audiencia{
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #DEEBF7;
+  width: 82rem;
+  height: 33rem;
+  overflow-y: scroll;
+}
+
+.adm-menu{
+  margin-top: 1rem;
+}
+
+.fonte-pequena{
+  font-size: 0.9rem;
+}
